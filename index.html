@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delight Industrial Services | Hospitality & Industrial Catering</title>
+  <meta name="description" content="Delight Industrial Services – Premier hospitality partner for industrial & institutional catering, corporate canteens, events, vending & pantry solutions across India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --brand:#0ea5e9; --brand-dark:#0284c7; }
+    html{ scroll-behavior:smooth; }
+    body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    /* Simple container widths */
+    .container{ max-width:1200px; margin-inline:auto; padding-inline:1rem; }
+    /* Hide the checkbox */
+    #nav-toggle{ display:none; }
+    /* Mobile menu */
+    #nav-menu{ display:none; }
+    #nav-toggle:checked ~ #nav-menu{ display:block; }
+    /* Glass card */
+    .glass{ backdrop-filter: blur(8px); background: rgba(255,255,255,.7); }
+    /* Gradient text */
+    .grad{ background: linear-gradient(90deg,#0ea5e9,#22c55e); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    /* Section spacing */
+    section{ scroll-margin-top:96px; }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230ea5e9'/><text x='50' y='60' font-size='48' text-anchor='middle' fill='white' font-family='Arial'>D</text></svg>">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // ==== EMAILJS CONFIG =====
+    // 1) Replace with your own Public Key, Service ID & Template ID
+    const EMAILJS_PUBLIC_KEY = "wsP5eNhz5TSeop54H"; // e.g. "m2xA1bCDEFghijk"
+    const EMAILJS_SERVICE_ID = "service_761f2ze";        // e.g. "service_ab12cd3"
+    const EMAILJS_TEMPLATE_ID = "template_gop8nfj";      // e.g. "template_9xyz01"
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (EMAILJS_PUBLIC_KEY && EMAILJS_PUBLIC_KEY !== 'wsP5eNhz5TSeop54H') {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>emailjs.init('wsP5eNhz5TSeop54H');</script>
+
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Top Bar -->
+  <div class="w-full bg-slate-900 text-slate-100 text-sm">
+    <div class="container flex items-center justify-between py-2">
+      <div class="flex items-center gap-4">
+        <a href="tel:+917905877011" class="hover:underline">📞 +91 79058 77011</a>
+        <a href="mailto:info@delightindustrial.in" class="hover:underline">✉️ delightindustrialservicesdis@gmail.com</a>
+        <a href="https://wa.me/917905877011" class="hover:underline" target="_blank" rel="noopener">🟢 WhatsApp</a>
+      </div>
+      <div class="hidden md:block">FSSAI • HACCP • ESIC • PF • GST Compliant</div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 bg-white/90 border-b border-slate-200 backdrop-blur">
+    <div class="container flex items-center justify-between h-16">
+      <a href="#" class="flex items-center gap-2 font-extrabold tracking-tight">
+       <div class="inline-grid place-items-center w-9 h-9 rounded-full overflow-hidden">
+  <img src="./logo.jpeg" alt="Logo" class="w-full h-full object-cover" />
+</div>
+
+        <span>Delight Industrial Services</span>
+      </a>
+      <label for="nav-toggle" class="md:hidden p-2 rounded hover:bg-slate-100 cursor-pointer" aria-label="Open Menu">☰</label>
+      <input type="checkbox" id="nav-toggle" />
+      <nav class="hidden md:flex items-center gap-6 font-medium">
+        <a class="hover:text-sky-600" href="#about">About</a>
+        <a class="hover:text-sky-600" href="#services">Services</a>
+        <a class="hover:text-sky-600" href="#why">Why Us</a>
+        <a class="hover:text-sky-600" href="#infrastructure">Infrastructure</a>
+        <a class="hover:text-sky-600" href="#clients">Clients</a>
+        <a class="hover:text-sky-600" href="#contact">Contact</a>
+        <a class="px-4 py-2 rounded-lg text-white" href="#contact" style="background:var(--brand)">Get Quote</a>
+      </nav>
+    </div>
+    <!-- Mobile menu -->
+    <div id="nav-menu" class="md:hidden border-t border-slate-200 bg-white">
+      <div class="container grid gap-2 py-3">
+        <a class="py-2 hover:bg-slate-50 rounded" href="#about">About</a>
+        <a class="py-2 hover:bg-slate-50 rounded" href="#services">Services</a>
+        <a class="py-2 hover:bg-slate-50 rounded" href="#why">Why Us</a>
+        <a class="py-2 hover:bg-slate-50 rounded" href="#infrastructure">Infrastructure</a>
+        <a class="py-2 hover:bg-slate-50 rounded" href="#clients">Clients</a>
+        <a class="py-2 hover:bg-slate-50 rounded" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-50 via-emerald-50 to-white"></div>
+    <div class="container grid md:grid-cols-2 items-center gap-8 py-16 md:py-24">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+          Your Hospitality Partner of Choice
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-slate-700">
+          End-to-end <span class="grad font-semibold">industrial & institutional catering</span>, corporate canteens, event catering, and pantry solutions—delivered with taste, hygiene, and efficiency.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-xl text-white" style="background:var(--brand)">Request a Proposal</a>
+          <a href="#services" class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-slate-50">Explore Services</a>
+        </div>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="p-4 bg-white rounded-2xl shadow-sm border">
+            <div class="text-2xl font-extrabold">100–10,000+</div>
+            <div class="text-xs text-slate-600">Meals/day capability</div>
+          </div>
+          <div class="p-4 bg-white rounded-2xl shadow-sm border">
+            <div class="text-2xl font-extrabold">Pan-India</div>
+            <div class="text-xs text-slate-600">Multi-sector coverage</div>
+          </div>
+          <div class="p-4 bg-white rounded-2xl shadow-sm border">
+            <div class="text-2xl font-extrabold">FSSAI • HACCP</div>
+            <div class="text-xs text-slate-600">Food-safety systems</div>
+          </div>
+          <div class="p-4 bg-white rounded-2xl shadow-sm border">
+            <div class="text-2xl font-extrabold">24×7</div>
+            <div class="text-xs text-slate-600">Shift-friendly service</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-6 bg-gradient-to-tr from-sky-200/40 to-emerald-200/40 rounded-3xl blur-2xl"></div>
+        <div class="relative glass rounded-3xl border p-6 shadow-xl">
+          <img alt="Catering operations" class="rounded-2xl w-full object-cover" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop" />
+          <div class="mt-4 text-sm text-slate-600">Trusted by PSUs, MNCs, campuses, hospitals & government offices.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 bg-white">
+    <div class="container grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-4xl font-extrabold">About Us</h2>
+        <p class="mt-4 leading-relaxed text-slate-700">
+          Delight Industrial Services is a premier hospitality service provider offering comprehensive food and facility management solutions across India. We deliver consistent, high‑quality services for government and private organizations with a client‑first mindset.
+        </p>
+        <ul class="mt-4 grid gap-2 text-slate-700 list-disc list-inside">
+          <li>Industrial catering for power plants, factories & warehouses</li>
+          <li>Institutional canteens for campuses & hospitals</li>
+          <li>Corporate cafeterias and pantry management</li>
+          <li>Large‑scale conferences, government and VIP event catering</li>
+        </ul>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl border bg-slate-50">
+            <div class="font-bold">Mission</div>
+            <div class="text-sm text-slate-700">Premium, hygienic, affordable food that boosts workforce health & efficiency.</div>
+          </div>
+          <div class="p-4 rounded-2xl border bg-slate-50">
+            <div class="font-bold">Vision</div>
+            <div class="text-sm text-slate-700">Be India’s most reliable, innovative hospitality partner.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img alt="Team at work in a modern kitchen" class="rounded-3xl shadow-xl w-full object-cover" src="./picture.jpeg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 md:py-24 bg-slate-50">
+    <div class="container">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">Core Services</h2>
+      <p class="mt-3 text-center text-slate-600 max-w-3xl mx-auto">Flexible solutions that scale with your needs—from 100 to 10,000+ meals/day.</p>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <div class="text-xl font-bold">Industrial & Institutional Catering</div>
+          <p class="mt-2 text-sm text-slate-700">Shift‑based hot meals, balanced menus for energy & nutrition, 24×7 operations.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <div class="text-xl font-bold">Corporate Canteen Management</div>
+          <p class="mt-2 text-sm text-slate-700">Setup & manage on‑site cafeterias including procurement, cooking, serving & clean‑up.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <div class="text-xl font-bold">Event Catering Services</div>
+          <p class="mt-2 text-sm text-slate-700">Government functions, conferences, and VIP events with end‑to‑end support.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="p-6 bg-white rounded-2xl border shadow-sm">
+          <div class="text-xl font-bold">Vending & Pantry Solutions</div>
+          <p class="mt-2 text-sm text-slate-700">Snack & beverage vending machines, managed pantries with hygiene assurance.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold text-lg">Special Add‑Ons</div>
+          <ul class="mt-2 text-sm text-slate-700 list-disc list-inside">
+            <li>Live counters (chaat, dosa, grill)</li>
+            <li>Low‑oil, diabetic‑friendly, protein‑rich options</li>
+            <li>Festival menus & weekend specials</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold text-lg">Culinary Diversity</div>
+          <ul class="mt-2 text-sm text-slate-700 list-disc list-inside">
+            <li>North & South Indian classics</li>
+            <li>Continental & Chinese favorites</li>
+            <li>Custom thematic menus</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold text-lg">Tech & Feedback</div>
+          <ul class="mt-2 text-sm text-slate-700 list-disc list-inside">
+            <li>Automated billing</li>
+            <li>Digital feedback systems</li>
+            <li>Real‑time supply monitoring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="py-16 md:py-24 bg-white">
+    <div class="container">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">Why Choose Us</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl border bg-slate-50">
+          <div class="font-bold">Hygiene & Safety</div>
+          <p class="text-sm mt-2 text-slate-700">End‑to‑end compliance with FSSAI, HACCP & internal SOPs.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-slate-50">
+          <div class="font-bold">Procurement Excellence</div>
+          <p class="text-sm mt-2 text-slate-700">Certified vendors, organic sourcing where feasible.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-slate-50">
+          <div class="font-bold">Customization & Scalability</div>
+          <p class="text-sm mt-2 text-slate-700">Flexible models for PSUs, MNCs, campuses & hospitals.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-slate-50">
+          <div class="font-bold">Sustainability</div>
+          <p class="text-sm mt-2 text-slate-700">Minimal plastic use & responsible waste management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infrastructure -->
+  <section id="infrastructure" class="py-16 md:py-24 bg-slate-50">
+    <div class="container">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">Operational Infrastructure</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold">Central Kitchens</div>
+          <p class="text-sm mt-2 text-slate-700">Modern equipment & bulk processing capacity.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold">Cold Chain Logistics</div>
+          <p class="text-sm mt-2 text-slate-700">Temperature‑controlled transport for perishables.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold">Separate Lines</div>
+          <p class="text-sm mt-2 text-slate-700">Dedicated vegetarian & non‑vegetarian workflows.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold">Safety Protocols</div>
+          <p class="text-sm mt-2 text-slate-700">Fire safety, pest control & sanitation SOPs.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold">Compliance</div>
+          <p class="text-sm mt-2 text-slate-700">FSSAI, GST, ESIC, PF & labour law adherence.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="font-bold">Continuity</div>
+          <p class="text-sm mt-2 text-slate-700">Emergency response & backup food supply systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section id="clients" class="py-16 md:py-24 bg-white">
+    <div class="container">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">Sectors We Serve</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-slate-50"><span class="font-bold">PSUs</span><div class="text-sm text-slate-700">Power, energy & infrastructure</div></div>
+        <div class="p-6 rounded-2xl border bg-slate-50"><span class="font-bold">MNCs</span><div class="text-sm text-slate-700">IT parks & corporate HQs</div></div>
+        <div class="p-6 rounded-2xl border bg-slate-50"><span class="font-bold">Educational Campuses</span><div class="text-sm text-slate-700">Universities & hostels</div></div>
+        <div class="p-6 rounded-2xl border bg-slate-50"><span class="font-bold">Healthcare</span><div class="text-sm text-slate-700">Hospitals & medical colleges</div></div>
+        <div class="p-6 rounded-2xl border bg-slate-50"><span class="font-bold">Government</span><div class="text-sm text-slate-700">Central & state offices</div></div>
+        <div class="p-6 rounded-2xl border bg-slate-50"><span class="font-bold">EPC Projects</span><div class="text-sm text-slate-700">Large industrial sites</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-12 bg-gradient-to-r from-sky-600 to-emerald-600 text-white">
+    <div class="container grid md:grid-cols-2 items-center gap-6">
+      <div class="text-2xl md:text-3xl font-bold">Ready to elevate your food services?</div>
+      <div class="flex md:justify-end gap-3">
+        <a href="#contact" class="px-5 py-3 bg-white text-slate-900 rounded-xl">Get a Free Quote</a>
+        <a href="https://wa.me/917905877011?text=Hello%20Delight%20Industrial%20Services" target="_blank" rel="noopener" class="px-5 py-3 border border-white/60 rounded-xl">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="container">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">Contact Us</h2>
+      <p class="mt-3 text-center text-slate-600">We typically reply within one business day.</p>
+
+      <div class="mt-10 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 p-6 rounded-2xl border bg-slate-50">
+          <form id="contact-form" class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-medium">Full Name</label>
+              <input required name="user_name" type="text" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="Your name" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Email</label>
+              <input required name="user_email" type="email" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="name@company.com" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Phone</label>
+              <input name="user_phone" type="tel" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="+91‑XXXXXXXXXX" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Subject</label>
+              <input required name="subject" type="text" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="RFP / Catering requirement" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Message</label>
+              <textarea required name="message" rows="5" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="Tell us about your requirement"></textarea>
+            </div>
+            <div class="sm:col-span-2 flex items-center gap-3">
+              <button id="send-btn" class="px-5 py-3 rounded-xl text-white disabled:opacity-60" style="background:var(--brand)">Send Message</button>
+              <div id="form-status" class="text-sm"></div>
+            </div>
+          </form>
+        </div>
+        <div class="p-6 rounded-2xl border bg-slate-50">
+          <div class="font-bold">Corporate Office</div>
+          <div class="text-sm text-slate-700 mt-1">Pure Newaj Qasimpur, Bahadurpur Da Jais Distt. Amethi(UP) </div>
+          <div class="mt-4">
+            <div class="text-sm">Phone</div>
+            <a class="font-medium hover:underline" href="tel:+917905877011">+91‑79058 77011</a>
+          </div>
+          <div class="mt-3">
+            <div class="text-sm">Email</div>
+            <a class="font-medium hover:underline" href="delightindustrialservicesdis@gmail.com">delightindustrialservicesdis@gmail.com</a>
+          </div>
+          <div class="mt-3">
+            <div class="text-sm">Website</div>
+            <a class="font-medium hover:underline" href="#">www.delightindustrial.in</a>
+          </div>
+          <div class="mt-6 text-xs text-slate-600">FSSAI • GST • ESIC • PF • Labour Law compliant. Fire NOC & Health certifications as per state guidelines.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-12 bg-slate-900 text-slate-200">
+    <div class="container grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-extrabold text-white">
+          <span class="inline-grid place-items-center w-9 h-9 rounded-full" style="background:var(--brand)">D</span>
+          Delight Industrial Services
+        </div>
+        <p class="mt-3 text-sm text-slate-400">Setting new benchmarks in food service excellence, operational efficiency, and customer satisfaction.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Company</div>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a class="hover:underline" href="#about">About</a></li>
+          <li><a class="hover:underline" href="#services">Services</a></li>
+          <li><a class="hover:underline" href="#why">Why Us</a></li>
+          <li><a class="hover:underline" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Compliance</div>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li>FSSAI & HACCP</li>
+          <li>GST & PAN</li>
+          <li>ESIC & PF</li>
+          <li>Food safety audits</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Newsletter</div>
+        <form id="newsletter" class="mt-3 flex gap-2">
+          <input id="newsletter-email" type="email" placeholder="Work email" class="flex-1 rounded-lg px-3 py-2 text-slate-900" required>
+          <button class="px-4 rounded-lg bg-white text-slate-900">Subscribe</button>
+        </form>
+        <div id="newsletter-status" class="text-xs mt-2"></div>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-white/10">
+      <div class="container flex flex-col md:flex-row items-center justify-between gap-4 py-6 text-xs text-slate-400">
+        <div>© <span id="year"></span> Delight Industrial Services. All rights reserved.</div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:underline">Privacy</a>
+          <a href="#" class="hover:underline">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <form id="contact-form">
+  <input name="user_name" placeholder="Your name" required />
+  <input name="user_email" type="email" placeholder="Email" required />
+  <input name="user_phone" placeholder="Phone" />
+  <input name="subject" placeholder="Subject" required />
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button type="submit">Send</button>
+  </form>
+
+  <script>
+    
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form submit with EmailJS
+    const form = document.getElementById('contact-form');
+    const btn = document.getElementById('send-btn');
+    const status = document.getElementById('form-status');
+
+    function showStatus(message, ok=true){
+      status.textContent = message;
+      status.className = `text-sm ${ok ? 'text-emerald-600' : 'text-red-600'}`;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!EMAILJS_PUBLIC_KEY || EMAILJS_PUBLIC_KEY === 'YOUR_EMAILJS_PUBLIC_KEY'){
+        showStatus('Email not configured. Add your EmailJS keys in the HTML <head>.', false);
+        return;
+      }
+      btn.disabled = true; showStatus('Sending…', true);
+
+      const formData = new FormData(form);
+      const templateParams = Object.fromEntries(formData.entries());
+
+      try {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+        showStatus('Message sent! We will get back to you shortly.');
+        form.reset();
+      } catch (err){
+        console.error(err);
+        showStatus('Failed to send. Please try again or email us directly.', false);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    // Dummy newsletter (no backend) – shows a toast only
+    document.getElementById('newsletter').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const em = document.getElementById('newsletter-email');
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){
+        document.getElementById('newsletter-status').textContent = 'Please enter a valid email.';
+        return;
+      }
+      document.getElementById('newsletter-status').textContent = 'Thanks for subscribing!';
+      em.value='';
+    });
+    
+  </script>
+  <script>
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const params = Object.fromEntries(new FormData(this).entries());
+  emailjs.send('service_761f2ze', 'template_gop8nfj', params)
+    .then(() => alert('Sent!'))
+    .catch(e => { console.error(e); alert('Error sending'); });
+});
+</script>
+</body>
+</html>
